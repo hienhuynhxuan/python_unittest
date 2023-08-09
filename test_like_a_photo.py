@@ -1,9 +1,9 @@
 import unittest
 from hamcrest import assert_that, greater_than
-from unit_test_demo.helpers.photo_helper import PhotoHelper
+from helpers.photo_helper import PhotoHelper
 
 
-class TestStringMethods(unittest.TestCase):
+class LikeAPhotoTestCase(unittest.TestCase):
     def setUp(self):
         self.photo_id = PhotoHelper.get_a_random_photo().json()['id']
 
